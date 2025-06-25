@@ -1,0 +1,5 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-D__MICROLIB -gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../source -I ../source/third_party/CMSIS/Core/Include -I ../../24DianSai -I ../Hardware -I ../MPU6050
+-D__UVISION_VERSION="542" -D__MSPM0G3507__ -D__MSPM0G3507__
+-o ./objects/jy901p.o -MMD "../JY901P.c"
